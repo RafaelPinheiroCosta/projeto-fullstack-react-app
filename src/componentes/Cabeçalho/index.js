@@ -1,7 +1,7 @@
 import './estilo.css'
 import Logotipo from "../Logotipo";
 import Menu from "../Menu";
-import IconesCabecalho from "../Login";
+import IconesCabecalho from "../IconesCabecalho";
 
 function Cabecalho() {
   return (
