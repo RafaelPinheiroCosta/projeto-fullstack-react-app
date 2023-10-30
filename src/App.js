@@ -1,16 +1,18 @@
-import './App.css';
+import "./App.css";
+import Cabecalho from "./componentes/Cabeçalho";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          Rafael22 ee
-        </p>
-        <p>
-        </p>
-      </header>
+      
+      <Cabecalho/>
+      
+      <div className="Corpo">
+
+        <nav className="Barra-Nav">Nav</nav>
+
+        <main className="Main">Main</main>
+      </div>
     </div>
   );
 }
