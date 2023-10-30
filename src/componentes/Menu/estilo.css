@@ -1,0 +1,12 @@
+.Header-menu{
+    display: flex;
+}
+.Menu-iten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+    min-width: 100px;
+}
