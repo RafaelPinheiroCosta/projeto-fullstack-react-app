@@ -1,12 +1,25 @@
-import "./estilo.css"
+import styled from "styled-components";
+const listaMenu = [ "Home", "Cursos", "Turmas"];
 
+const MenuCabecalho = styled.ul`
+    display: flex;
+`
+const ItemMenu = styled.li`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+padding: 0 10px;
+cursor: pointer;
+min-width: 100px;
+`
 function Menu(){
     return(
-        <ul className="Header-menu">
-          <li className="Menu-iten">Home</li>
-          <li className="Menu-iten">Cursos</li>
-          <li className="Menu-iten">Turmas</li>
-        </ul>
+        <MenuCabecalho>
+          { listaMenu.map((item) => (
+              <ItemMenu>{item}</ItemMenu>
+          ))}
+        </MenuCabecalho>
     );
 }
 export default Menu
