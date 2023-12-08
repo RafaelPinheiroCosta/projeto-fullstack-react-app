@@ -2,11 +2,16 @@ import "./estilo.css";
 import login from "../../imagens/login.png";
 import pesquisar from "../../imagens/pesquisar.png"
 
+const listaIcone = [login,pesquisar]
+
 function IconesCabecalho() {
   return (
     <div className="icones">
-      <img src={pesquisar} className="icone" alt="login" />
-      <img src={login} className="icone" alt="login" />
+      {
+        listaIcone.map((icone)=>(          
+          <img src={icone} className="icone" alt="login" />
+        ))
+      }
     </div>
   );
 }
